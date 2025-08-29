@@ -1,0 +1,11 @@
+[Unit]
+Description=HP Mute LED Controller
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hp-mute-led.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
